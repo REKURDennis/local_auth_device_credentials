@@ -135,7 +135,6 @@
   NSError *authError = nil;
   lastCallArgs = nil;
   lastResult = nil;
-  context.localizedFallbackTitle = @"";
 
   if ([context canEvaluatePolicy:LAPolicyDeviceOwnerAuthentication error:&authError]) {
     [context evaluatePolicy:LAPolicyDeviceOwnerAuthentication
